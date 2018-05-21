@@ -20,10 +20,10 @@ Current build status
 
 Current release info
 ====================
-[![Conda Recipe](https://img.shields.io/badge/recipe-r--pca3d-green.svg)](https://anaconda.org/conda-forge/r-pca3d)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-pca3d.svg)](https://anaconda.org/conda-forge/r-pca3d)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-pca3d.svg)](https://anaconda.org/conda-forge/r-pca3d)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-pca3d.svg)](https://anaconda.org/conda-forge/r-pca3d)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--pca3d-green.svg)](https://anaconda.org/conda-forge/r-pca3d) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-pca3d.svg)](https://anaconda.org/conda-forge/r-pca3d) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-pca3d.svg)](https://anaconda.org/conda-forge/r-pca3d) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-pca3d.svg)](https://anaconda.org/conda-forge/r-pca3d) |
 
 Installing r-pca3d
 ==================
