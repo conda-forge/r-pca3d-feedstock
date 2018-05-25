@@ -1,17 +1,16 @@
 {% set version = '0.10' %}
-
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-pca3d
-  version: {{ version }}
+  version: {{ version|replace("-", "_") }}
 
 source:
   fn: pca3d_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/pca3d_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/pca3d/pca3d_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/pca3d_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/pca3d/pca3d_{{ version }}.tar.gz
   sha256: c3e95f50a4d1bdc6b48ad18bc496131bd1601ec2502e5f20684ec0239726f5ae
 
 build:
@@ -23,7 +22,7 @@ build:
     - lib/
 
 requirements:
-  build:
+  host:
     - r-base
     - r-ellipse
     - r-rgl
@@ -35,7 +34,7 @@ requirements:
 
 test:
   commands:
-    - $R -e "library('pca3d')"  # [not win]
+    - $R -e "library('pca3d')"           # [not win]
     - "\"%R%\" -e \"library('pca3d')\""  # [win]
 
 about:
