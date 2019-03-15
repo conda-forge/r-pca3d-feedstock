@@ -1,7 +1,11 @@
+<!--
+# -*- mode: jinja -*-
+-->
+
 About r-pca3d
 =============
 
-Home: https://logfc.wordpress.com/
+Home: https://logfc.wordpress.com
 
 Package license: GPL-2
 
@@ -14,9 +18,8 @@ Summary: Functions simplifying presentation of PCA models in a 3D interactive re
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-pca3d-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-pca3d-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-pca3d-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-pca3d-feedstock/branch/master)
-![OSX disabled](https://img.shields.io/badge/OSX-disabled-lightgrey.svg)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-pca3d-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-pca3d-feedstock)
 
 Current release info
 ====================
@@ -49,6 +52,8 @@ conda search r-pca3d --channel conda-forge
 
 About conda-forge
 =================
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -104,3 +109,10 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@conda-forge/r](https://github.com/conda-forge/r/)
+* [@nsoranzo](https://github.com/nsoranzo/)
+
