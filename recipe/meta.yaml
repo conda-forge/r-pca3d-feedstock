@@ -1,4 +1,4 @@
-{% set version = '0.10' %}
+{% set version = "0.10.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pca3d_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pca3d/pca3d_{{ version }}.tar.gz
-  sha256: c3e95f50a4d1bdc6b48ad18bc496131bd1601ec2502e5f20684ec0239726f5ae
+  sha256: a4cda65f269537708b62bf517faace643386d7f72ed2be03a4ff6d084bbae7bb
 
 build:
   merge_build_host: True  # [win]
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
