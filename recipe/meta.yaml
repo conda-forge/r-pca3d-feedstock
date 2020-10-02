@@ -1,4 +1,4 @@
-{% set version = "0.10.1" %}
+{% set version = "0.10.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pca3d_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pca3d/pca3d_{{ version }}.tar.gz
-  sha256: a4cda65f269537708b62bf517faace643386d7f72ed2be03a4ff6d084bbae7bb
+  sha256: a6cbc3d57cdf89ac9cb6b7ce48ab8cd9a929b092425ee35c3fd8c0f6d1b1f476
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -45,10 +45,9 @@ test:
 about:
   home: https://logfc.wordpress.com
   license: GPL-2.0-only
-  summary: Functions simplifying presentation of PCA models in a 3D interactive representation
-    using 'rgl'.
+  summary: Functions simplifying presentation of PCA models in a 3D interactive representation using 'rgl'.
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
