@@ -3,9 +3,9 @@ About r-pca3d
 
 Home: https://logfc.wordpress.com
 
-Package license: GPL-2
+Package license: GPL-2.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Functions simplifying presentation of PCA models in a 3D interactive representation using 'rgl'.
 
