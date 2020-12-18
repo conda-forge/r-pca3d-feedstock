@@ -5,11 +5,9 @@ Home: https://logfc.wordpress.com
 
 Package license: GPL-2.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-pca3d-feedstock/blob/master/LICENSE.txt)
 
 Summary: Functions simplifying presentation of PCA models in a 3D interactive representation using 'rgl'.
-
-
 
 Current build status
 ====================
