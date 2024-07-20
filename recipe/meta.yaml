@@ -1,6 +1,5 @@
 {% set version = "0.10.2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-pca3d
@@ -13,8 +12,7 @@ source:
   sha256: a6cbc3d57cdf89ac9cb6b7ce48ab8cd9a929b092425ee35c3fd8c0f6d1b1f476
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
